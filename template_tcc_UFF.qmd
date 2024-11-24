@@ -1,56 +1,72 @@
 ---
-title: "Título do TCC aqui"
-subject: "Assunto"
-subtitle: "Programa de Pós-Graduação em Administração Mestrado Acadêmico em Administração"
-author: "Marcus Antonio Cardoso Ramalho"
-
-format:
+title: dissertação
+author: Nome do Autor
+date: today
+execute: 
+  freeze: auto
+format: 
   pdf:
     template-partials: 
     - "before-body.tex" 
     latex_engine: xelatex
-    sansfont: Times New Roman
+    mainfont: Times New Roman
     fontsize: 12pt
     lineheight: 1.5
     linestretch: 1.5
-    geometry: "left=2.54cm, top=2.54cm, right=2.54cm, bottom=2.54cm"
+    geometry: "left=3cm, top=3cm, right=2cm, bottom=2cm"
     keep-tex: false
     number-sections: true
+    include-in-header: config.tex        
 crossref:
   fig-title: Figura   
   fig-prefix: figura
   tbl-title: Tabela     
   tbl-prefix: tabela
+  lof-title: LISTA DE FIGURAS
+  lot-title: LISTA DE TABELAS
+  eq-title: Equação
+  eq-prefix: equação
+tbl-cap-location: top
+fig-cap-location: top
+lot: true
+lof: true
+listings: true
+toc: true
+toc-title: SUMÁRIO
+toc-depth: 3
+linkcolor: black
+link-bibliography: false
 editor: visual
-bibliography: references.bib
-csl: apa.csl
+# bibliography: references.bib
+csl: abnt2023.csl
 ---
 
 \newpage
-
-<!-- Muda a cor e o título do sumário na segunda página -->
-
-```{=tex}
-\hypersetup{linkcolor=black} 
-\renewcommand{\contentsname}{Sumário}
-\tableofcontents
-\newpage
-```
-
-
-## Introdução
-## Objetivos
-### Gerais
-### Específicos
-## Justificativa
-## Referencial Teórico
-## Metodologia
-## Limitações 
-## Discussão
-## Conclusão
-
-## Conclusão
-
+\listofequations
 \newpage
 
-## Bibliografia
+# Introdução
+
+# Objetivos
+
+## Gerais
+
+## Específicos
+
+# Justificativa
+
+# Referencial Teórico
+
+# Metodologia
+
+# Limitações
+
+# Discussão
+
+# Conclusão
+
+# Conclusão
+
+\newpage
+
+# Bibliografia
